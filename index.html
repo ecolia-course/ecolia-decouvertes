@@ -4,183 +4,355 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="theme-color" content="#0d1117">
-  <meta name="description" content="Découvrez comment présenter votre boutique dans Ecolia Découvertes.">
-  <title>Ecolia Découvertes — Présenter ma boutique</title>
+  <title>Rejoindre Ecolia Découvertes</title>
+
   <style>
-    :root {
-      --bg: #0d1117;
-      --card: #161b22;
-      --border: #21262d;
-      --green: #00ff88;
-      --cyan: #00ccff;
-      --text: #e6f1ff;
-      --muted: #8b949e;
-      --soft: #c0c8d0;
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
     }
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    html { scroll-behavior: smooth; }
+
     body {
-      font-family: "Segoe UI", Roboto, Arial, sans-serif;
-      background: var(--bg);
-      color: var(--text);
-      padding: 18px 15px 38px;
-      line-height: 1.55;
+      font-family: Arial, sans-serif;
+      background: #0d1117;
+      color: #e6edf3;
+      line-height: 1.6;
+      padding: 20px 15px;
     }
-    .page { width: 100%; max-width: 540px; margin: 0 auto; }
-    .top { text-align: center; padding: 18px 8px 22px; }
+
+    .container {
+      max-width: 620px;
+      margin: 0 auto;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 28px;
+    }
+
     .logo {
-      width: 58px; height: 58px; margin: 0 auto 12px;
-      display: grid; place-items: center; border-radius: 17px;
-      background: #161b22; border: 1px solid #263343; font-size: 29px;
+      color: #00ff88;
+      font-size: 25px;
+      font-weight: bold;
+      margin-bottom: 8px;
     }
-    h1 { color: var(--green); font-size: 26px; line-height: 1.2; }
-    .subtitle { color: var(--muted); font-size: 13px; margin-top: 7px; }
+
+    h1 {
+      font-size: 25px;
+      margin-bottom: 10px;
+    }
+
     .intro {
-      background: var(--card); border: 1px solid var(--border);
-      border-radius: 14px; padding: 17px; margin-bottom: 14px;
+      color: #aab4c0;
+      font-size: 15px;
     }
-    .intro h2, .section h2 { color: var(--cyan); font-size: 16px; margin-bottom: 8px; }
-    p { color: var(--soft); font-size: 13px; }
-    .section {
-      background: var(--card); border: 1px solid var(--border);
-      border-radius: 14px; padding: 17px; margin-bottom: 13px;
+
+    .card {
+      background: #161b22;
+      border: 1px solid #30363d;
+      border-radius: 14px;
+      padding: 22px;
+      margin-bottom: 20px;
     }
-    .section p { margin-bottom: 9px; }
-    .section p:last-child { margin-bottom: 0; }
-    .items { list-style: none; margin-top: 10px; }
-    .items li {
-      display: flex; gap: 10px; align-items: flex-start;
-      color: var(--soft); font-size: 13px; margin: 9px 0;
+
+    .card h2 {
+      font-size: 18px;
+      margin-bottom: 12px;
+      color: #00ccff;
     }
-    .check { color: var(--green); font-weight: bold; flex: 0 0 17px; }
-    .steps { counter-reset: step; list-style: none; margin-top: 11px; }
-    .steps li {
-      counter-increment: step; display: flex; gap: 11px;
-      color: var(--soft); font-size: 13px; margin: 12px 0;
+
+    .card p {
+      color: #b8c2cc;
+      font-size: 14px;
+      margin-bottom: 10px;
     }
-    .steps li::before {
-      content: counter(step); flex: 0 0 25px; height: 25px;
-      display: grid; place-items: center; border-radius: 50%;
-      background: rgba(0,255,136,.12); color: var(--green);
-      font-size: 12px; font-weight: 700;
+
+    .form-group {
+      margin-bottom: 17px;
     }
-    .note {
-      border-left: 3px solid var(--cyan); padding: 9px 11px;
-      background: rgba(0,204,255,.06); border-radius: 0 8px 8px 0;
-      color: var(--muted); font-size: 12px; margin-top: 12px;
+
+    label {
+      display: block;
+      font-size: 14px;
+      font-weight: bold;
+      margin-bottom: 7px;
     }
-    .cta {
-      display: block; width: 100%; text-align: center; text-decoration: none;
-      padding: 15px 16px; border-radius: 12px; margin-top: 13px;
-      background: var(--green); color: #101820; font-size: 15px;
-      font-weight: 750; border: 0;
+
+    input,
+    select,
+    textarea {
+      width: 100%;
+      padding: 13px;
+      border: 1px solid #30363d;
+      border-radius: 9px;
+      background: #0d1117;
+      color: #e6edf3;
+      font-size: 15px;
+      outline: none;
     }
-    .cta:active { transform: scale(.985); }
-    .wa-icon { margin-right: 6px; }
-    .small { text-align: center; color: #737d88; font-size: 11px; margin-top: 10px; }
+
+    input:focus,
+    select:focus,
+    textarea:focus {
+      border-color: #00ff88;
+    }
+
+    input::placeholder,
+    textarea::placeholder {
+      color: #77818c;
+    }
+
+    select {
+      appearance: auto;
+    }
+
+    .hint {
+      display: block;
+      color: #8b949e;
+      font-size: 12px;
+      margin-top: 5px;
+    }
+
+    .notice {
+      background: #10251e;
+      border-left: 3px solid #00ff88;
+      border-radius: 7px;
+      padding: 13px;
+      font-size: 13px;
+      color: #c8e6d7;
+      margin: 18px 0;
+    }
+
+    button {
+      width: 100%;
+      border: none;
+      border-radius: 10px;
+      padding: 15px;
+      background: #00ff88;
+      color: #07130d;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: opacity 0.2s;
+    }
+
+    button:active {
+      opacity: 0.8;
+    }
+
     .footer {
-      text-align: center; color: #697582; font-size: 11px;
-      padding: 16px 8px 5px;
+      text-align: center;
+      color: #77818c;
+      font-size: 12px;
+      margin-top: 25px;
     }
-    strong { color: var(--green); font-weight: 650; }
-    a:focus-visible { outline: 2px solid var(--cyan); outline-offset: 3px; }
-    @media (min-width: 600px) {
-      body { padding-top: 30px; }
-      .top { padding-bottom: 26px; }
+
+    @media (max-width: 400px) {
+      body {
+        padding: 15px 10px;
+      }
+
+      .card {
+        padding: 17px;
+      }
+
+      h1 {
+        font-size: 22px;
+      }
     }
   </style>
 </head>
+
 <body>
-  <main class="page">
-    <header class="top">
-      <div class="logo" aria-hidden="true">✨</div>
-      <h1>ECOLIA DÉCOUVERTES</h1>
-      <p class="subtitle">Faites découvrir votre boutique.</p>
+
+  <main class="container">
+
+    <header>
+      <div class="logo">ECOLIA</div>
+      <h1>Rejoindre Ecolia Découvertes</h1>
+      <p class="intro">
+        Donnez plus de visibilité à votre boutique ou à votre entreprise
+        auprès des visiteurs d'Ecolia.
+      </p>
     </header>
 
-    <section class="intro">
-      <h2>À quoi sert cette partie ?</h2>
+    <section class="card">
+      <h2>Comment ça fonctionne ?</h2>
+
       <p>
-        Ecolia Découvertes présente des boutiques et, selon les cas,
-        certains de leurs produits. Les visiteurs intéressés sont ensuite
-        dirigés vers le site ou les moyens de contact du commerçant.
+        Ecolia Découvertes permet aux visiteurs de découvrir des boutiques,
+        des entreprises et des produits.
+      </p>
+
+      <p>
+        Votre présentation peut rediriger les personnes intéressées vers
+        votre site web, vos réseaux sociaux ou votre contact WhatsApp.
+      </p>
+
+      <p>
+        Ecolia assure la visibilité et la mise en relation.
+        Les ventes et les transactions restent directement entre vous
+        et vos clients.
       </p>
     </section>
 
-    <section class="section">
-      <h2>Comment obtenir un espace ?</h2>
-      <p>La demande se fait simplement par WhatsApp :</p>
-      <ol class="steps">
-        <li>Présentez brièvement votre boutique ou votre entreprise.</li>
-        <li>Envoyez une image représentative : logo, photo de la boutique ou produit.</li>
-        <li>Indiquez un moyen de contact et, si vous en avez, votre site ou vos pages en ligne.</li>
-        <li>Notre équipe vous répondra pour examiner la présentation et les conditions de visibilité.</li>
-      </ol>
+    <section class="card">
+      <h2>Présentez votre activité</h2>
+
+      <form id="partnerForm">
+
+        <div class="form-group">
+          <label for="business">Nom de la boutique ou de l'entreprise *</label>
+          <input
+            type="text"
+            id="business"
+            placeholder="Ex. : Boutique ABC"
+            required
+          >
+        </div>
+
+        <div class="form-group">
+          <label for="activity">Votre domaine d'activité *</label>
+          <input
+            type="text"
+            id="activity"
+            placeholder="Ex. : Vêtements, informatique, alimentation..."
+            required
+          >
+        </div>
+
+        <div class="form-group">
+          <label for="contact">Votre contact WhatsApp *</label>
+          <input
+            type="tel"
+            id="contact"
+            placeholder="Ex. : +243..."
+            required
+          >
+        </div>
+
+        <div class="form-group">
+          <label for="city">Ville ou quartier</label>
+          <input
+            type="text"
+            id="city"
+            placeholder="Ex. : Kinshasa, Gombe"
+          >
+        </div>
+
+        <div class="form-group">
+          <label for="presence">Votre présence en ligne</label>
+          <input
+            type="url"
+            id="presence"
+            placeholder="Lien de votre site web ou réseau social"
+          >
+          <span class="hint">
+            Facultatif. Vous pouvez laisser ce champ vide.
+          </span>
+        </div>
+
+        <div class="form-group">
+          <label for="presentation">Que souhaitez-vous présenter ? *</label>
+          <select id="presentation" required>
+            <option value="">Choisir une présentation</option>
+            <option value="Ma boutique ou mon entreprise">
+              Ma boutique ou mon entreprise
+            </option>
+            <option value="Un ou plusieurs produits précis">
+              Un ou plusieurs produits précis
+            </option>
+            <option value="Ma boutique et certains produits">
+              Ma boutique et certains produits
+            </option>
+          </select>
+        </div>
+
+        <div class="notice">
+          <strong>À propos des images :</strong>
+          après l'ouverture de WhatsApp, vous pourrez joindre une photo
+          de votre boutique, votre logo ou vos produits.
+        </div>
+
+        <button type="submit">
+          Continuer sur WhatsApp
+        </button>
+
+      </form>
     </section>
 
-    <section class="section">
-      <h2>Informations à préparer</h2>
-      <ul class="items">
-        <li><span class="check">✓</span><span><strong>Nom</strong> de la boutique ou de l'entreprise.</span></li>
-        <li><span class="check">✓</span><span><strong>Activité</strong> : ce que vous proposez.</span></li>
-        <li><span class="check">✓</span><span><strong>Image</strong> : logo, boutique ou produit à présenter.</span></li>
-        <li><span class="check">✓</span><span><strong>Contact</strong> : téléphone ou WhatsApp destiné aux visiteurs.</span></li>
-        <li><span class="check">✓</span><span><strong>Présence numérique</strong> : site Internet, page sociale ou autre lien, si disponible.</span></li>
-        <li><span class="check">✓</span><span><strong>Localisation</strong> : ville et, si utile, quartier.</span></li>
-      </ul>
-      <div class="note">
-        Vous n'avez pas encore de site Internet ? Vous pouvez tout de même
-        demander une présentation avec vos coordonnées de contact.
-      </div>
-    </section>
+    <section class="card">
+      <h2>Une visibilité accessible</h2>
 
-    <section class="section">
-      <h2>Comment fonctionne la visibilité ?</h2>
       <p>
-        La présence dans Ecolia Découvertes est un service payant.
-        Une offre d'essai peut être proposée aux premiers partenaires pendant
-        la phase de lancement. Les conditions sont communiquées avant publication.
+        La visibilité dans Ecolia Découvertes pourra faire l'objet
+        d'une formule payante. Une période d'essai pourra être proposée
+        aux premiers partenaires.
       </p>
+
       <p>
-        Ecolia assure la présentation et la mise en relation. Les demandes,
-        commandes, paiements et livraisons sont traités directement entre
-        le client et le commerçant.
+        Chaque demande est étudiée avant la publication.
       </p>
     </section>
-
-    <a class="cta" id="whatsappBtn" href="#" rel="noopener">
-      <span class="wa-icon">◉</span> Demander un espace sur WhatsApp
-    </a>
-    <p class="small">Le message s'ouvrira dans WhatsApp. Vous pourrez le compléter et joindre votre image avant de l'envoyer.</p>
 
     <footer class="footer">
-      Ecolia Découvertes · Un espace pour faire connaître votre activité.
+      Ecolia Découvertes · Découvrir, apprendre et se connecter.
     </footer>
+
   </main>
 
   <script>
-    // Numéro de test actuel. Pour utiliser le second numéro plus tard,
-    // remplacer par : 243972718390
-    var WHATSAPP_NUMBER = "243898653907";
+    const WHATSAPP_NUMBER = "243898653907";
 
-    var message = [
-      "Bonjour, je souhaite présenter ma boutique dans Ecolia Découvertes.",
-      "",
-      "Nom de la boutique :",
-      "Activité :",
-      "Ville / quartier :",
-      "Contact destiné aux visiteurs :",
-      "Site ou page en ligne (si disponible) :",
-      "Que souhaitez-vous mettre en avant ?",
-      "",
-      "Je joindrai une image de ma boutique ou d'un produit dans WhatsApp.",
-      "",
-      "",
-      "ECL"
-    ].join("\n");
+    document
+      .getElementById("partnerForm")
+      .addEventListener("submit", function (event) {
 
-    document.getElementById("whatsappBtn").href =
-      "https://wa.me/" + WHATSAPP_NUMBER + "?text=" + encodeURIComponent(message);
+        event.preventDefault();
+
+        const business =
+          document.getElementById("business").value.trim();
+
+        const activity =
+          document.getElementById("activity").value.trim();
+
+        const contact =
+          document.getElementById("contact").value.trim();
+
+        const city =
+          document.getElementById("city").value.trim();
+
+        const presence =
+          document.getElementById("presence").value.trim();
+
+        const presentation =
+          document.getElementById("presentation").value;
+
+        let message =
+          "Bonjour, je souhaite présenter mon activité dans Ecolia Découvertes.\n\n" +
+
+          "Nom : " + business + "\n" +
+          "Activité : " + activity + "\n" +
+          "Contact : " + contact + "\n" +
+          "Ville / quartier : " + (city || "Non précisé") + "\n" +
+          "Présence en ligne : " + (presence || "Non précisée") + "\n" +
+          "Présentation souhaitée : " + presentation + "\n\n" +
+
+          "Je joins une image de ma boutique, de mon logo ou de mes produits.\n\n" +
+
+          "Demande transmise depuis Ecolia Découvertes.\n" +
+          "ECL";
+
+        const whatsappURL =
+          "https://wa.me/" +
+          WHATSAPP_NUMBER +
+          "?text=" +
+          encodeURIComponent(message);
+
+        window.open(whatsappURL, "_blank");
+      });
   </script>
+
 </body>
 </html>
