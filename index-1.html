@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0d1117">
+  <meta name="description" content="Découvrez comment présenter votre boutique dans Ecolia Découvertes.">
+  <title>Ecolia Découvertes — Présenter ma boutique</title>
+  <style>
+    :root {
+      --bg: #0d1117;
+      --card: #161b22;
+      --border: #21262d;
+      --green: #00ff88;
+      --cyan: #00ccff;
+      --text: #e6f1ff;
+      --muted: #8b949e;
+      --soft: #c0c8d0;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: "Segoe UI", Roboto, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      padding: 18px 15px 38px;
+      line-height: 1.55;
+    }
+    .page { width: 100%; max-width: 540px; margin: 0 auto; }
+    .top { text-align: center; padding: 18px 8px 22px; }
+    .logo {
+      width: 58px; height: 58px; margin: 0 auto 12px;
+      display: grid; place-items: center; border-radius: 17px;
+      background: #161b22; border: 1px solid #263343; font-size: 29px;
+    }
+    h1 { color: var(--green); font-size: 26px; line-height: 1.2; }
+    .subtitle { color: var(--muted); font-size: 13px; margin-top: 7px; }
+    .intro {
+      background: var(--card); border: 1px solid var(--border);
+      border-radius: 14px; padding: 17px; margin-bottom: 14px;
+    }
+    .intro h2, .section h2 { color: var(--cyan); font-size: 16px; margin-bottom: 8px; }
+    p { color: var(--soft); font-size: 13px; }
+    .section {
+      background: var(--card); border: 1px solid var(--border);
+      border-radius: 14px; padding: 17px; margin-bottom: 13px;
+    }
+    .section p { margin-bottom: 9px; }
+    .section p:last-child { margin-bottom: 0; }
+    .items { list-style: none; margin-top: 10px; }
+    .items li {
+      display: flex; gap: 10px; align-items: flex-start;
+      color: var(--soft); font-size: 13px; margin: 9px 0;
+    }
+    .check { color: var(--green); font-weight: bold; flex: 0 0 17px; }
+    .steps { counter-reset: step; list-style: none; margin-top: 11px; }
+    .steps li {
+      counter-increment: step; display: flex; gap: 11px;
+      color: var(--soft); font-size: 13px; margin: 12px 0;
+    }
+    .steps li::before {
+      content: counter(step); flex: 0 0 25px; height: 25px;
+      display: grid; place-items: center; border-radius: 50%;
+      background: rgba(0,255,136,.12); color: var(--green);
+      font-size: 12px; font-weight: 700;
+    }
+    .note {
+      border-left: 3px solid var(--cyan); padding: 9px 11px;
+      background: rgba(0,204,255,.06); border-radius: 0 8px 8px 0;
+      color: var(--muted); font-size: 12px; margin-top: 12px;
+    }
+    .cta {
+      display: block; width: 100%; text-align: center; text-decoration: none;
+      padding: 15px 16px; border-radius: 12px; margin-top: 13px;
+      background: var(--green); color: #101820; font-size: 15px;
+      font-weight: 750; border: 0;
+    }
+    .cta:active { transform: scale(.985); }
+    .wa-icon { margin-right: 6px; }
+    .small { text-align: center; color: #737d88; font-size: 11px; margin-top: 10px; }
+    .footer {
+      text-align: center; color: #697582; font-size: 11px;
+      padding: 16px 8px 5px;
+    }
+    strong { color: var(--green); font-weight: 650; }
+    a:focus-visible { outline: 2px solid var(--cyan); outline-offset: 3px; }
+    @media (min-width: 600px) {
+      body { padding-top: 30px; }
+      .top { padding-bottom: 26px; }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <header class="top">
+      <div class="logo" aria-hidden="true">✨</div>
+      <h1>ECOLIA DÉCOUVERTES</h1>
+      <p class="subtitle">Faites découvrir votre boutique.</p>
+    </header>
+
+    <section class="intro">
+      <h2>À quoi sert cette partie ?</h2>
+      <p>
+        Ecolia Découvertes présente des boutiques et, selon les cas,
+        certains de leurs produits. Les visiteurs intéressés sont ensuite
+        dirigés vers le site ou les moyens de contact du commerçant.
+      </p>
+    </section>
+
+    <section class="section">
+      <h2>Comment obtenir un espace ?</h2>
+      <p>La demande se fait simplement par WhatsApp :</p>
+      <ol class="steps">
+        <li>Présentez brièvement votre boutique ou votre entreprise.</li>
+        <li>Envoyez une image représentative : logo, photo de la boutique ou produit.</li>
+        <li>Indiquez un moyen de contact et, si vous en avez, votre site ou vos pages en ligne.</li>
+        <li>Notre équipe vous répondra pour examiner la présentation et les conditions de visibilité.</li>
+      </ol>
+    </section>
+
+    <section class="section">
+      <h2>Informations à préparer</h2>
+      <ul class="items">
+        <li><span class="check">✓</span><span><strong>Nom</strong> de la boutique ou de l'entreprise.</span></li>
+        <li><span class="check">✓</span><span><strong>Activité</strong> : ce que vous proposez.</span></li>
+        <li><span class="check">✓</span><span><strong>Image</strong> : logo, boutique ou produit à présenter.</span></li>
+        <li><span class="check">✓</span><span><strong>Contact</strong> : téléphone ou WhatsApp destiné aux visiteurs.</span></li>
+        <li><span class="check">✓</span><span><strong>Présence numérique</strong> : site Internet, page sociale ou autre lien, si disponible.</span></li>
+        <li><span class="check">✓</span><span><strong>Localisation</strong> : ville et, si utile, quartier.</span></li>
+      </ul>
+      <div class="note">
+        Vous n'avez pas encore de site Internet ? Vous pouvez tout de même
+        demander une présentation avec vos coordonnées de contact.
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Comment fonctionne la visibilité ?</h2>
+      <p>
+        La présence dans Ecolia Découvertes est un service payant.
+        Une offre d'essai peut être proposée aux premiers partenaires pendant
+        la phase de lancement. Les conditions sont communiquées avant publication.
+      </p>
+      <p>
+        Ecolia assure la présentation et la mise en relation. Les demandes,
+        commandes, paiements et livraisons sont traités directement entre
+        le client et le commerçant.
+      </p>
+    </section>
+
+    <a class="cta" id="whatsappBtn" href="#" rel="noopener">
+      <span class="wa-icon">◉</span> Demander un espace sur WhatsApp
+    </a>
+    <p class="small">Le message s'ouvrira dans WhatsApp. Vous pourrez le compléter et joindre votre image avant de l'envoyer.</p>
+
+    <footer class="footer">
+      Ecolia Découvertes · Un espace pour faire connaître votre activité.
+    </footer>
+  </main>
+
+  <script>
+    // Numéro de test actuel. Pour utiliser le second numéro plus tard,
+    // remplacer par : 243972718390
+    var WHATSAPP_NUMBER = "243898653907";
+
+    var message = [
+      "Bonjour, je souhaite présenter ma boutique dans Ecolia Découvertes.",
+      "",
+      "Nom de la boutique :",
+      "Activité :",
+      "Ville / quartier :",
+      "Contact destiné aux visiteurs :",
+      "Site ou page en ligne (si disponible) :",
+      "Que souhaitez-vous mettre en avant ?",
+      "",
+      "Je joindrai une image de ma boutique ou d'un produit dans WhatsApp.",
+      "",
+      "",
+      "ECL"
+    ].join("\n");
+
+    document.getElementById("whatsappBtn").href =
+      "https://wa.me/" + WHATSAPP_NUMBER + "?text=" + encodeURIComponent(message);
+  </script>
+</body>
+</html>
